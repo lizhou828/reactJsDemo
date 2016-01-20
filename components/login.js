@@ -3,6 +3,11 @@ var TextField = require('material-ui/lib/text-field');
 var RaisedButton = require('material-ui/lib/raised-button');
 var Dialog = require('material-ui/lib/dialog');
 
+//var Constants= require('./constant');
+var cookie = require('react-cookie');
+var jq = require('qwest');
+
+
 class Login extends React.Component{
     constructor(props) {
         super(props);
@@ -35,14 +40,14 @@ class Login extends React.Component{
             return;
         }
 
-        //jq.post(Constants._URL_LOGIN, this.state, {cache: true})
-        //    .then(function(xhr, response) {
-        //        cookie.save('key', response.js);
-        //        this.props.history.pushState({result: response.result}, '/add');
-        //    }.bind(this))
-        //    .catch(function(xhr, response, e) {
-        //        this.setState({err: response.result})
-        //    }.bind(this));
+        jq.post("", this.state, {cache: true})
+            .then(function(xhr, response) {
+                cookie.save('key', response.js);
+                this.props.history.pushState({result: response.result}, '/add');
+            }.bind(this))
+            .catch(function(xhr, response, e) {
+                this.setState({err: response.result})
+            }.bind(this));
 
         /*jq.ajax({
          url: Constants._URL_LOGIN,

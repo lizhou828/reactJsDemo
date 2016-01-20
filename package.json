@@ -19,6 +19,7 @@
     "babel-preset-react": "^6.3.13",
     "history": "^1.17.0",
     "jsx-loader": "^0.13.2",
+    "qwest": "^3.0.0",
     "react": "^0.14.6",
     "react-cookie": "^0.4.3",
     "react-dom": "^0.14.6",
