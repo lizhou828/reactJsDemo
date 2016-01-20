@@ -7,10 +7,12 @@
 
 
 module.exports = {
-    entry: './entry.js',
+    entry: {
+        'index':'./index.js'
+    },
     output: {
         path: __dirname,
-        filename: 'build/bundle.js'
+        filename: '/build/index.js'
     },
     //resolve 指定可以被 require 的文件后缀。比如 Hello.jsx 这样的文件就可以直接用 require(./Hello) 引用。
     resolve: {
@@ -20,6 +22,14 @@ module.exports = {
         //loaders 指定 jsx-loader 编译后缀名为 .jsx 的文件，建议给含有 JSX 的文件添加 .jsx 后缀，
         // 当然你也可以直接使用 .js 后缀， 相应的 test 配置正则要修改匹配就是。
         loaders: [
+            //{
+            //    test: /\.jsx?$/,
+            //    loader: 'babel',
+            //     //babel6 才需要配置这个，presets里面两个预编译插件，前一个用于编译es6，后一个用于编译react。按需配置。这个工程都需要。
+            //     query:{
+            //        presets: ['es2015','react']
+            //     }
+            //},
             {
                 test: /\.js$/,
                 loaders: ['jsx?harmony']
@@ -37,3 +47,22 @@ module.exports = {
         ]
     }
 }
+
+
+
+
+//以上代码主要告诉了webpack：
+//
+//哪个文件需要打包（entry字段），打包之后生成的新文件存到哪个路径（output中的path）、新文件叫什么名字（output中的filename）；
+//要使用哪些加载器（module.loaders）。这里要使用babel来编译jsx和es6的代码。
+//
+//总得来说，webpack从entry拿到目标文件，通过loaders进行编译，从output输出，其他功能由plugins引入。
+//
+//注：index.js：负责渲染组件到页面上。相当于一个总的出口。因为会自动加载依赖关系，所以webpack.config.js文件只需要配置这一文件即可。
+//另外，这个工程比较简单，只需配置一个js文件。
+//
+//如果要打包多个js文件，这么配置：
+//entry: {
+//        'file1': './index.js',    //key只是个名字，可以自由改
+//        'file2': './entry2.js'
+//}
