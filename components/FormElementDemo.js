@@ -13,10 +13,10 @@ class FormElementDemo extends React.Component {
             male: true,
             emailError: "",
             introError: "",
-            favorite:{
-                basketball:false,
-                ping_pang:false,
-                badminton:false
+            favorite: {
+                basketball: false,
+                ping_pang: false,
+                badminton: false
             }
         }
     }
@@ -59,41 +59,30 @@ class FormElementDemo extends React.Component {
         })
     }
 
-    handFavorite(e){
+    handFavorite(e) {
         var checked = e.target.checked;
         var value = e.target.value;
         var basketball = this.state.favorite.basketball;
         var ping_pang = this.state.favorite.ping_pang;
         var badminton = this.state.favorite.badminton;
-        if(checked){
-            this.setState({
-                favorite:{
-                    basketball : "basketball" == value ? true : basketball,
-                    ping_pang : "ping_pang" == value ? true : ping_pang,
-                    badminton : "badminton" == value ? true : badminton
-                }
-            });
-        }else{
-            this.setState({
-                favorite:{
-                    basketball : "basketball" == value ? !basketball : basketball,
-                    ping_pang : "ping_pang" == value ? !ping_pang : ping_pang,
-                    badminton : "badminton" == value ? !badminton: badminton
-                }
-            });
-        }
+        this.setState({
+            favorite: {
+                basketball: "basketball" == value ? (checked ? true : !basketball) : basketball,
+                ping_pang: "ping_pang" == value ? (checked ? true : !ping_pang) : ping_pang,
+                badminton: "badminton" == value ? (checked ? true : !badminton) : badminton
+            }
+        });
     }
 
-    validate(){
-
+    validate() {
     }
-    handSubmit(e){
-        if( !(this.validate())){
+
+    handSubmit(e) {
+        if (!(this.validate())) {
             e.preventDefault()
         }
         console.log(this.state.favorite);
-        alert(this.state.email+","+this.state.intro+","+this.state.city+","+this.state.male);
-
+        alert(this.state.email + "," + this.state.intro + "," + this.state.city + "," + this.state.male);
     }
 
     render() {
@@ -130,9 +119,12 @@ class FormElementDemo extends React.Component {
                     </p>
                     <p>
                         <label>爱好：</label>
-                        篮球 <input type="checkbox" name="favorite" value="basketball" checked={this.state.favorite.basketball} onClick = {this.handFavorite.bind(this)} />
-                        乒乓球球 <input type="checkbox" name="favorite" value="ping_pang" checked={this.state.favorite.ping_pang} onClick = {this.handFavorite.bind(this)}/>
-                        羽毛球 <input type="checkbox" name="favorite" value="badminton" checked={this.state.favorite.badminton} onClick = {this.handFavorite.bind(this)}/>
+                        篮球 <input type="checkbox" name="favorite" value="basketball"
+                                  checked={this.state.favorite.basketball} onClick={this.handFavorite.bind(this)}/>
+                        乒乓球球 <input type="checkbox" name="favorite" value="ping_pang"
+                                    checked={this.state.favorite.ping_pang} onClick={this.handFavorite.bind(this)}/>
+                        羽毛球 <input type="checkbox" name="favorite" value="badminton"
+                                   checked={this.state.favorite.badminton} onClick={this.handFavorite.bind(this)}/>
                     </p>
                     <button type="submit">注册</button>
                 </form>

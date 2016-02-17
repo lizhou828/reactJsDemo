@@ -20162,7 +20162,7 @@
 	var ReactRouter= __webpack_require__(/*! react-router */ 160);
 	var Link = ReactRouter.Link;
 	
-	var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){IndexPage[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;IndexPage.prototype=Object.create(____SuperProtoOf____Class0);IndexPage.prototype.constructor=IndexPage;IndexPage.__superConstructor__=____Class0;function IndexPage(){"use strict";if(____Class0!==null){____Class0.apply(this,arguments);}}
+	var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){IndexPage[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;IndexPage.prototype=Object.create(____SuperProtoOf____Class1);IndexPage.prototype.constructor=IndexPage;IndexPage.__superConstructor__=____Class1;function IndexPage(){"use strict";if(____Class1!==null){____Class1.apply(this,arguments);}}
 	    Object.defineProperty(IndexPage.prototype,"render",{writable:true,configurable:true,value:function(){"use strict";
 	        return React.createElement("div", null, 
 	            "Index page!", 
@@ -24665,7 +24665,7 @@
 
 	var React = __webpack_require__(/*! react */ 1);
 	
-	var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____Class2.hasOwnProperty(____Class2____Key)){MyHelloWorld[____Class2____Key]=____Class2[____Class2____Key];}}var ____SuperProtoOf____Class2=____Class2===null?null:____Class2.prototype;MyHelloWorld.prototype=Object.create(____SuperProtoOf____Class2);MyHelloWorld.prototype.constructor=MyHelloWorld;MyHelloWorld.__superConstructor__=____Class2;function MyHelloWorld(){"use strict";if(____Class2!==null){____Class2.apply(this,arguments);}}
+	var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){MyHelloWorld[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;MyHelloWorld.prototype=Object.create(____SuperProtoOf____Class0);MyHelloWorld.prototype.constructor=MyHelloWorld;MyHelloWorld.__superConstructor__=____Class0;function MyHelloWorld(){"use strict";if(____Class0!==null){____Class0.apply(this,arguments);}}
 	    Object.defineProperty(MyHelloWorld.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
 	        return React.createElement("div", null, 
 	            "This is MyhelloWorld Page !"
@@ -24696,9 +24696,9 @@
 	var jq = __webpack_require__(/*! qwest */ 295);
 	
 	
-	var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){Login[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;Login.prototype=Object.create(____SuperProtoOf____Class1);Login.prototype.constructor=Login;Login.__superConstructor__=____Class1;
+	var ____Class3=React.Component;for(var ____Class3____Key in ____Class3){if(____Class3.hasOwnProperty(____Class3____Key)){Login[____Class3____Key]=____Class3[____Class3____Key];}}var ____SuperProtoOf____Class3=____Class3===null?null:____Class3.prototype;Login.prototype=Object.create(____SuperProtoOf____Class3);Login.prototype.constructor=Login;Login.__superConstructor__=____Class3;
 	    function Login(props) {"use strict";
-	        ____Class1.call(this,props);
+	        ____Class3.call(this,props);
 	        this.state = {
 	            username: '',
 	            password: '',
@@ -35435,9 +35435,9 @@
 	    }
 	];
 	
-	var ____Class4=React.Component;for(var ____Class4____Key in ____Class4){if(____Class4.hasOwnProperty(____Class4____Key)){CascadeSelect[____Class4____Key]=____Class4[____Class4____Key];}}var ____SuperProtoOf____Class4=____Class4===null?null:____Class4.prototype;CascadeSelect.prototype=Object.create(____SuperProtoOf____Class4);CascadeSelect.prototype.constructor=CascadeSelect;CascadeSelect.__superConstructor__=____Class4;
+	var ____Class2=React.Component;for(var ____Class2____Key in ____Class2){if(____Class2.hasOwnProperty(____Class2____Key)){CascadeSelect[____Class2____Key]=____Class2[____Class2____Key];}}var ____SuperProtoOf____Class2=____Class2===null?null:____Class2.prototype;CascadeSelect.prototype=Object.create(____SuperProtoOf____Class2);CascadeSelect.prototype.constructor=CascadeSelect;CascadeSelect.__superConstructor__=____Class2;
 	    function CascadeSelect(props) {"use strict";
-	        ____Class4.call(this,props);
+	        ____Class2.call(this,props);
 	        this.state = {
 	            items: [],
 	            choose: []
@@ -35522,9 +35522,9 @@
 	
 	var React = __webpack_require__(/*! react */ 1);
 	
-	var ____Class3=React.Component;for(var ____Class3____Key in ____Class3){if(____Class3.hasOwnProperty(____Class3____Key)){FormElementDemo[____Class3____Key]=____Class3[____Class3____Key];}}var ____SuperProtoOf____Class3=____Class3===null?null:____Class3.prototype;FormElementDemo.prototype=Object.create(____SuperProtoOf____Class3);FormElementDemo.prototype.constructor=FormElementDemo;FormElementDemo.__superConstructor__=____Class3;
+	var ____Class4=React.Component;for(var ____Class4____Key in ____Class4){if(____Class4.hasOwnProperty(____Class4____Key)){FormElementDemo[____Class4____Key]=____Class4[____Class4____Key];}}var ____SuperProtoOf____Class4=____Class4===null?null:____Class4.prototype;FormElementDemo.prototype=Object.create(____SuperProtoOf____Class4);FormElementDemo.prototype.constructor=FormElementDemo;FormElementDemo.__superConstructor__=____Class4;
 	    function FormElementDemo(props) {"use strict";
-	        ____Class3.call(this,props);
+	        ____Class4.call(this,props);
 	        this.state = {
 	            email: "",
 	            intro: "",
@@ -35532,10 +35532,10 @@
 	            male: true,
 	            emailError: "",
 	            introError: "",
-	            favorite:{
-	                basketball:false,
-	                ping_pang:false,
-	                badminton:false
+	            favorite: {
+	                basketball: false,
+	                ping_pang: false,
+	                badminton: false
 	            }
 	        }
 	    }
@@ -35578,44 +35578,32 @@
 	        })
 	    }});
 	
-	    Object.defineProperty(FormElementDemo.prototype,"handFavorite",{writable:true,configurable:true,value:function(e){"use strict";
+	    Object.defineProperty(FormElementDemo.prototype,"handFavorite",{writable:true,configurable:true,value:function(e) {"use strict";
 	        var checked = e.target.checked;
-	
 	        var value = e.target.value;
 	        var basketball = this.state.favorite.basketball;
 	        var ping_pang = this.state.favorite.ping_pang;
 	        var badminton = this.state.favorite.badminton;
+	        this.setState({
+	            favorite: {
+	                basketball: "basketball" == value ? (checked ? true : !basketball) : basketball,
+	                ping_pang: "ping_pang" == value ? (checked ? true : !ping_pang) : ping_pang,
+	                badminton: "badminton" == value ? (checked ? true : !badminton) : badminton
+	            }
+	        });
 	
-	        if(checked){
-	            this.setState({
-	                favorite:{
-	                    basketball : "basketball" == value ? true : basketball,
-	                    ping_pang : "ping_pang" == value ? true : ping_pang,
-	                    badminton : "badminton" == value ? true : badminton
-	                }
-	            });
-	        }else{
-	            this.setState({
-	                favorite:{
-	                    basketball : "basketball" == value ? !basketball : basketball,
-	                    ping_pang : "ping_pang" == value ? !ping_pang : ping_pang,
-	                    badminton : "badminton" == value ? !badminton: badminton
-	                }
-	            });
-	        }
 	
 	    }});
 	
-	    Object.defineProperty(FormElementDemo.prototype,"validate",{writable:true,configurable:true,value:function(){"use strict";
-	
+	    Object.defineProperty(FormElementDemo.prototype,"validate",{writable:true,configurable:true,value:function() {"use strict";
 	    }});
-	    Object.defineProperty(FormElementDemo.prototype,"handSubmit",{writable:true,configurable:true,value:function(e){"use strict";
-	        if( !(this.validate())){
+	
+	    Object.defineProperty(FormElementDemo.prototype,"handSubmit",{writable:true,configurable:true,value:function(e) {"use strict";
+	        if (!(this.validate())) {
 	            e.preventDefault()
 	        }
 	        console.log(this.state.favorite);
-	        alert(this.state.email+","+this.state.intro+","+this.state.city+","+this.state.male);
-	
+	        alert(this.state.email + "," + this.state.intro + "," + this.state.city + "," + this.state.male);
 	    }});
 	
 	    Object.defineProperty(FormElementDemo.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
@@ -35652,9 +35640,12 @@
 	                    ), 
 	                    React.createElement("p", null, 
 	                        React.createElement("label", null, "爱好："), 
-	                        "篮球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "basketball", checked: this.state.favorite.basketball, onClick: this.handFavorite.bind(this)}), 
-	                        "乒乓球球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "ping_pang", checked: this.state.favorite.ping_pang, onClick: this.handFavorite.bind(this)}), 
-	                        "羽毛球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "badminton", checked: this.state.favorite.badminton, onClick: this.handFavorite.bind(this)})
+	                        "篮球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "basketball", 
+	                                  checked: this.state.favorite.basketball, onClick: this.handFavorite.bind(this)}), 
+	                        "乒乓球球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "ping_pang", 
+	                                    checked: this.state.favorite.ping_pang, onClick: this.handFavorite.bind(this)}), 
+	                        "羽毛球 ", React.createElement("input", {type: "checkbox", name: "favorite", value: "badminton", 
+	                                   checked: this.state.favorite.badminton, onClick: this.handFavorite.bind(this)})
 	                    ), 
 	                    React.createElement("button", {type: "submit"}, "注册")
 	                )
