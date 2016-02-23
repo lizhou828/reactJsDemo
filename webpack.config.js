@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         path: __dirname,
-        filename: '/build/index.js'
+        filename: '/build/js/index.js'
     },
     //resolve 指定可以被 require 的文件后缀。比如 Hello.jsx 这样的文件就可以直接用 require(./Hello) 引用。
     //resolve: {

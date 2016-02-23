@@ -1,11 +1,11 @@
 var React = require('react');
 var { render }= require('react-dom');
 
-var IndexPage = require('./components/IndexPage');
-var MyHelloWorld = require('./components/MyHelloWorld');
-var Login = require('./components/login');
-var CascadeSelect = require('./components/CascadeSelect');
-var FormElementDemo = require('./components/FormElementDemo');
+var IndexPage = require('./src/js/components/IndexPage');
+var MyHelloWorld = require('./src/js/components/MyHelloWorld');
+var Login = require('./src/js/components/login');
+var CascadeSelect = require('./src/js/components/CascadeSelect');
+var FormElementDemo = require('./src/js/components/FormElementDemo');
 
 var {Router, Route, IndexRoute } = require('react-router');
 

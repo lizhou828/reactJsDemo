@@ -1,6 +1,6 @@
 import React from 'react';
-import TextField from 'material-ui/lib/text-field';
-import RaisedButton from 'material-ui/lib/raised-button';
+import TextField from '../../../node_modules/material-ui/lib/text-field';
+import RaisedButton from '../../../node_modules/material-ui/lib/raised-button';
 
 //var Constants= require('./constant');
 import cookie from 'react-cookie';
