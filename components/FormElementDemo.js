@@ -1,7 +1,7 @@
 //ReactJs 表单内的组件
 // /来源于：http://blog.csdn.net/lihongxun945/article/details/46730835
 
-var React = require('react');
+import React from 'react';
 
 class FormElementDemo extends React.Component {
     constructor(props) {

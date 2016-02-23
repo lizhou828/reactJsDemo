@@ -1,4 +1,4 @@
-var React = window.React = require('react');
+import React from 'react';
 
 var provData = {
     label: '省',

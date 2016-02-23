@@ -1,6 +1,5 @@
-var React = require('react');
-var ReactRouter= require('react-router');
-var Link = ReactRouter.Link;
+import React from 'react';
+import {ReactRouter,Link} from 'react-router';
 
 class IndexPage extends React.Component {
     render(){

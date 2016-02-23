@@ -1,11 +1,10 @@
-var React = require('react');
-var TextField = require('material-ui/lib/text-field');
-var RaisedButton = require('material-ui/lib/raised-button');
-var Dialog = require('material-ui/lib/dialog');
+import React from 'react';
+import TextField from 'material-ui/lib/text-field';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 //var Constants= require('./constant');
-var cookie = require('react-cookie');
-var jq = require('qwest');
+import cookie from 'react-cookie';
+import jq from 'qwest';
 
 
 class Login extends React.Component{

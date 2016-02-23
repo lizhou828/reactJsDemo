@@ -15,26 +15,27 @@ module.exports = {
         filename: '/build/index.js'
     },
     //resolve 指定可以被 require 的文件后缀。比如 Hello.jsx 这样的文件就可以直接用 require(./Hello) 引用。
-    resolve: {
-        extensions: ['', '.js', '.jsx']
-    },
+    //resolve: {
+    //    extensions: ['', '.js', '.jsx']
+    //},
     module: {
         //loaders 指定 jsx-loader 编译后缀名为 .jsx 的文件，建议给含有 JSX 的文件添加 .jsx 后缀，
         // 当然你也可以直接使用 .js 后缀， 相应的 test 配置正则要修改匹配就是。
         loaders: [
-            //{
-            //    test: /\.jsx?$/,
-            //    loader: 'babel',
-            //     //babel6 才需要配置这个，presets里面两个预编译插件，前一个用于编译es6，后一个用于编译react。按需配置。这个工程都需要。
-            //     query:{
-            //        presets: ['es2015','react']
-            //     }
-            //},
             {
-                test: /\.js$/,
+                test: /\.js?$/,
+                loader: 'babel',
                 exclude: /node_modules/,
-                loader: 'react-hot!jsx-loader?harmony'  //让Webpack用react-hot-loader去加载React组件
+                 //babel6 才需要配置这个，presets里面两个预编译插件，前一个用于编译es6，后一个用于编译react。按需配置。这个工程都需要。
+                 query:{
+                    presets: ['es2015','react']
+                 }
             },
+            //{
+            //    test: /\.js$/,
+            //    exclude: /node_modules/,
+            //    loader: 'react-hot!jsx-loader?harmony'  //让Webpack用react-hot-loader去加载React组件
+            //},
             {
                 test: /\.(css)$/,
                 // 多个加载器通过“!”连接
