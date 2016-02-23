@@ -14,6 +14,7 @@ var injectTapEventPlugin = require( 'react-tap-event-plugin');
 injectTapEventPlugin();
 
 //路由器
+//深入理解 react-router 路由系统 :http://zhuanlan.zhihu.com/purerender/20381597
 const routes = (
     <Router>
         <Route path="/" component={IndexPage}>

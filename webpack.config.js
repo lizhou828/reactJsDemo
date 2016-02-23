@@ -4,15 +4,35 @@
 //使用 React: var React = require('react');
 //监听编译: webpack -d --watch
 //更多关于 Webpack 的介绍 :https://github.com/petehunt/webpack-howto
+var webpack = require('webpack');
+var path = require('path');
 
+//定义了一些文件夹的路径
+var ROOT_PATH = path.resolve(__dirname);
+var APP_PATH = path.resolve(ROOT_PATH, 'src');
+var APP_JS_PATH = path.resolve(APP_PATH, 'js');
+var APP_CSS_PATH = path.resolve(APP_PATH, 'css');
+
+var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
+var BUILD_JS_PATH = path.resolve(BUILD_PATH, 'js');
+var BUILD_CSS_PATH = path.resolve(BUILD_PATH, 'css');
 
 module.exports = {
     entry: {
-        'index':'./index.js' // Your appʼs entry point
+        //'webpack-dev-server/client?http://127.0.0.1:3000',
+        //'webpack/hot/only-dev-server',
+        //'./index.js'
+
+        //'index':'./index.js' // Your appʼs entry point
+
+        app:['./index.js']
     },
     output: {
-        path: __dirname,
-        filename: '/build/js/index.js'
+        //path: __dirname,
+        //filename: '/build/js/index.js'
+        publicPath: "http://127.0.0.1:3000/build/js/",
+        path: BUILD_JS_PATH,
+        filename: '/index.js'
     },
     //resolve 指定可以被 require 的文件后缀。比如 Hello.jsx 这样的文件就可以直接用 require(./Hello) 引用。
     //resolve: {
@@ -31,11 +51,11 @@ module.exports = {
                     presets: ['es2015','react']
                  }
             },
-            //{
-            //    test: /\.js$/,
-            //    exclude: /node_modules/,
-            //    loader: 'react-hot!jsx-loader?harmony'  //让Webpack用react-hot-loader去加载React组件
-            //},
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: ['react-hot', 'jsx?harmony']  //让Webpack用react-hot-loader去加载React组件
+            },
             {
                 test: /\.(css)$/,
                 // 多个加载器通过“!”连接
@@ -49,7 +69,13 @@ module.exports = {
                 // 用于减少对于小图片资源的HTTP请求数量
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': '"development"'
+        }),
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
 
 
