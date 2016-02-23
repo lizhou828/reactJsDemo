@@ -67,9 +67,9 @@ class FormElementDemo extends React.Component {
         var badminton = this.state.favorite.badminton;
         this.setState({
             favorite: {
-                basketball: "basketball" == value ? (checked ? true : !basketball) : basketball,
-                ping_pang: "ping_pang" == value ? (checked ? true : !ping_pang) : ping_pang,
-                badminton: "badminton" == value ? (checked ? true : !badminton) : badminton
+                basketball: "basketball" == value ? (checked ? true : false) : basketball,
+                ping_pang: "ping_pang" == value ? (checked ? true : false) : ping_pang,
+                badminton: "badminton" == value ? (checked ? true : false) : badminton
             }
         });
     }

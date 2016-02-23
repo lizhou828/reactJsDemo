@@ -8,7 +8,7 @@
 
 module.exports = {
     entry: {
-        'index':'./index.js'
+        'index':'./index.js' // Your appʼs entry point
     },
     output: {
         path: __dirname,
@@ -32,7 +32,8 @@ module.exports = {
             //},
             {
                 test: /\.js$/,
-                loaders: ['jsx?harmony']
+                exclude: /node_modules/,
+                loader: 'react-hot!jsx-loader?harmony'  //让Webpack用react-hot-loader去加载React组件
             },
             {
                 test: /\.(css)$/,
@@ -43,10 +44,12 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 //url-loader 支持base64 编码的行内资源
                 loader: 'url-loader?size=8192!url-loader?mimetype=image/png'
+                //代码中url-loader?size=8192含义就是对于所有小于8192字节的图片资源也进行打包。这在一定程度上可以替代Css Sprites方案，
+                // 用于减少对于小图片资源的HTTP请求数量
             }
         ]
     }
-}
+};
 
 
 

@@ -47,6 +47,8 @@
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	var React = __webpack_require__(/*! react */ 1);
 	var $__0=   __webpack_require__(/*! react-dom */ 158),render=$__0.render;
 	
@@ -81,6 +83,8 @@
 	
 	
 
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 1 */
@@ -20158,11 +20162,13 @@
   \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	var React = __webpack_require__(/*! react */ 1);
 	var ReactRouter= __webpack_require__(/*! react-router */ 160);
 	var Link = ReactRouter.Link;
 	
-	var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){IndexPage[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;IndexPage.prototype=Object.create(____SuperProtoOf____Class1);IndexPage.prototype.constructor=IndexPage;IndexPage.__superConstructor__=____Class1;function IndexPage(){"use strict";if(____Class1!==null){____Class1.apply(this,arguments);}}
+	var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){IndexPage[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;IndexPage.prototype=Object.create(____SuperProtoOf____Class0);IndexPage.prototype.constructor=IndexPage;IndexPage.__superConstructor__=____Class0;function IndexPage(){"use strict";if(____Class0!==null){____Class0.apply(this,arguments);}}
 	    Object.defineProperty(IndexPage.prototype,"render",{writable:true,configurable:true,value:function(){"use strict";
 	        return React.createElement("div", null, 
 	            "Index page!", 
@@ -20181,6 +20187,8 @@
 	
 	
 
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "IndexPage.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 160 */
@@ -24663,9 +24671,11 @@
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	var React = __webpack_require__(/*! react */ 1);
 	
-	var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){MyHelloWorld[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;MyHelloWorld.prototype=Object.create(____SuperProtoOf____Class0);MyHelloWorld.prototype.constructor=MyHelloWorld;MyHelloWorld.__superConstructor__=____Class0;function MyHelloWorld(){"use strict";if(____Class0!==null){____Class0.apply(this,arguments);}}
+	var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){MyHelloWorld[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;MyHelloWorld.prototype=Object.create(____SuperProtoOf____Class1);MyHelloWorld.prototype.constructor=MyHelloWorld;MyHelloWorld.__superConstructor__=____Class1;function MyHelloWorld(){"use strict";if(____Class1!==null){____Class1.apply(this,arguments);}}
 	    Object.defineProperty(MyHelloWorld.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
 	        return React.createElement("div", null, 
 	            "This is MyhelloWorld Page !"
@@ -24679,6 +24689,8 @@
 	
 
 
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "MyHelloWorld.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
 /***/ },
 /* 208 */
 /*!*****************************!*\
@@ -24686,6 +24698,8 @@
   \*****************************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	var React = __webpack_require__(/*! react */ 1);
 	var TextField = __webpack_require__(/*! material-ui/lib/text-field */ 209);
 	var RaisedButton = __webpack_require__(/*! material-ui/lib/raised-button */ 264);
@@ -24696,9 +24710,9 @@
 	var jq = __webpack_require__(/*! qwest */ 295);
 	
 	
-	var ____Class3=React.Component;for(var ____Class3____Key in ____Class3){if(____Class3.hasOwnProperty(____Class3____Key)){Login[____Class3____Key]=____Class3[____Class3____Key];}}var ____SuperProtoOf____Class3=____Class3===null?null:____Class3.prototype;Login.prototype=Object.create(____SuperProtoOf____Class3);Login.prototype.constructor=Login;Login.__superConstructor__=____Class3;
+	var ____Class4=React.Component;for(var ____Class4____Key in ____Class4){if(____Class4.hasOwnProperty(____Class4____Key)){Login[____Class4____Key]=____Class4[____Class4____Key];}}var ____SuperProtoOf____Class4=____Class4===null?null:____Class4.prototype;Login.prototype=Object.create(____SuperProtoOf____Class4);Login.prototype.constructor=Login;Login.__superConstructor__=____Class4;
 	    function Login(props) {"use strict";
-	        ____Class3.call(this,props);
+	        ____Class4.call(this,props);
 	        this.state = {
 	            username: '',
 	            password: '',
@@ -24840,6 +24854,8 @@
 	
 	
 
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "login.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 209 */
@@ -35404,6 +35420,8 @@
   \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	var React = window.React = __webpack_require__(/*! react */ 1);
 	
 	var provData = {
@@ -35509,6 +35527,8 @@
 	
 	
 	module.exports = CascadeSelect;
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "CascadeSelect.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 301 */
@@ -35517,14 +35537,16 @@
   \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
 	//ReactJs 表单内的组件
 	// /来源于：http://blog.csdn.net/lihongxun945/article/details/46730835
 	
 	var React = __webpack_require__(/*! react */ 1);
 	
-	var ____Class4=React.Component;for(var ____Class4____Key in ____Class4){if(____Class4.hasOwnProperty(____Class4____Key)){FormElementDemo[____Class4____Key]=____Class4[____Class4____Key];}}var ____SuperProtoOf____Class4=____Class4===null?null:____Class4.prototype;FormElementDemo.prototype=Object.create(____SuperProtoOf____Class4);FormElementDemo.prototype.constructor=FormElementDemo;FormElementDemo.__superConstructor__=____Class4;
+	var ____Class3=React.Component;for(var ____Class3____Key in ____Class3){if(____Class3.hasOwnProperty(____Class3____Key)){FormElementDemo[____Class3____Key]=____Class3[____Class3____Key];}}var ____SuperProtoOf____Class3=____Class3===null?null:____Class3.prototype;FormElementDemo.prototype=Object.create(____SuperProtoOf____Class3);FormElementDemo.prototype.constructor=FormElementDemo;FormElementDemo.__superConstructor__=____Class3;
 	    function FormElementDemo(props) {"use strict";
-	        ____Class4.call(this,props);
+	        ____Class3.call(this,props);
 	        this.state = {
 	            email: "",
 	            intro: "",
@@ -35586,13 +35608,11 @@
 	        var badminton = this.state.favorite.badminton;
 	        this.setState({
 	            favorite: {
-	                basketball: "basketball" == value ? (checked ? true : !basketball) : basketball,
-	                ping_pang: "ping_pang" == value ? (checked ? true : !ping_pang) : ping_pang,
-	                badminton: "badminton" == value ? (checked ? true : !badminton) : badminton
+	                basketball: "basketball" == value ? (checked ? true : false) : basketball,
+	                ping_pang: "ping_pang" == value ? (checked ? true : false) : ping_pang,
+	                badminton: "badminton" == value ? (checked ? true : false) : badminton
 	            }
 	        });
-	
-	
 	    }});
 	
 	    Object.defineProperty(FormElementDemo.prototype,"validate",{writable:true,configurable:true,value:function() {"use strict";
@@ -35655,6 +35675,8 @@
 	
 	
 	module.exports = FormElementDemo;
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\github\\lizhou828\\reactJsDemo\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "FormElementDemo.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 302 */
