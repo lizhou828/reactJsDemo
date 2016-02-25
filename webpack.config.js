@@ -19,13 +19,11 @@ var BUILD_CSS_PATH = path.resolve(BUILD_PATH, 'css');
 
 module.exports = {
     entry: {
-        //'webpack-dev-server/client?http://127.0.0.1:3000',
-        //'webpack/hot/only-dev-server',
-        //'./index.js'
-
-        //'index':'./index.js' // Your appʼs entry point
-
-        app:['./index.js']
+        app:[
+            "webpack-dev-server/client?http://localhost:3000/",
+            "webpack/hot/dev-server",
+            './index.js'
+        ] //Your appʼs entry point
     },
     output: {
         //path: __dirname,
@@ -44,18 +42,18 @@ module.exports = {
         loaders: [
             {
                 test: /\.js?$/,
-                loader: 'babel',
+                loader:  'babel',
                 exclude: /node_modules/,
                  //babel6 才需要配置这个，presets里面两个预编译插件，前一个用于编译es6，后一个用于编译react。按需配置。这个工程都需要。
                  query:{
                     presets: ['es2015','react']
                  }
             },
-            {
-                test: /\.jsx$/,
-                exclude: /node_modules/,
-                loader: ['react-hot', 'jsx?harmony']  //让Webpack用react-hot-loader去加载React组件
-            },
+            //{
+            //    test: /\.jsx$/,
+            //    exclude: /node_modules/,
+            //    loader: ['react-hot', 'jsx?harmony']  //让Webpack用react-hot-loader去加载React组件
+            //},
             {
                 test: /\.(css)$/,
                 // 多个加载器通过“!”连接
